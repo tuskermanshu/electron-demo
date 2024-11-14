@@ -24,5 +24,24 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {
+            "options": {
+              "maintainer": "Your Name",
+              "homepage": "https://example.com",
+              "categories": [
+                "Utility"
+              ]
+            }
+          }
+        }
+      ]
+    }
   }
 }
